@@ -4,14 +4,21 @@
     padding: 0;
 
 }
-body div h1 {
-    padding-top: 20%;
+body {
+    padding: 10%;
     align-items: center;
-
+    background-image: url('https://scontent.fqsc1-1.fna.fbcdn.net/v/t1.0-9/94575654_2867543993361359_4435595808150126592_o.jpg?_nc_cat=111&ccb=2&_nc_sid=174925&_nc_ohc=yYnVnY9MZx0AX8VYsO6&_nc_ht=scontent.fqsc1-1.fna&oh=0c2926a9255fa7bc8fd80d6526559486&oe=5FDC9B26');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 20%;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+textDecoration{
+        text-decoration: dashed;
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+}
+
+.fundo{
+    background-image: url('https://scontent.fqsc1-1.fna.fbcdn.net/v/t1.0-9/94575654_2867543993361359_4435595808150126592_o.jpg?_nc_cat=111&ccb=2&_nc_sid=174925&_nc_ohc=yYnVnY9MZx0AX8VYsO6&_nc_ht=scontent.fqsc1-1.fna&oh=0c2926a9255fa7bc8fd80d6526559486&oe=5FDC9B26');
 }
