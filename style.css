@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#animacao {
+    animation-name: mover-texto, aumentar-texto;
+    animation-duration: 5s, 2s;
+    animation-timing-function: ease-out, ease-in;
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards, forwards;
+  }
+  
+  @keyframes mover-texto {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes aumentar-texto {
+    from {
+      font-size: 100%;
+    }
+    to {
+      font-size: 700%;
+    }
+  }
+
+
+  .container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  h1 {
+    
+    text-align: center;
+  }
+  h3 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .rightt {
+    text-align: right;
+  }
+  
