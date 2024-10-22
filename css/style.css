@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  /* font-family: "Roboto", sans-serif; 
+  font-size: 100%;
+  font-weight: 400; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+h3 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+header {
+  display: flex;
+  direction: column;
+  height: 20rem;
+  /* border: solid white 2px; */
+  justify-content: center;
+  align-items: center;
+}
+.tl {
+  font-family: "old-english-text-mt";
+  font-size: 12rem;
+}
+
+/*Fim - Header */
+hr {
+  width: 57%; /* Largura do traço */
+  border: none; /* Remove o estilo padrão do <hr> */
+  border-top: 2px solid white; /* Define o traço sólido branco */
+  margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço vertical */
+  position: relative; /* Necessário para aplicar sombras */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+    /* Sombra branca no centro */ -15px 0 15px rgba(255, 255, 255, 0.7),
+    /* Esbranquiçada à esquerda */ -30px 0 20px rgba(0, 0, 0, 0.3),
+    /* Começa a escurecer à esquerda */ 15px 0 15px rgba(255, 255, 255, 0.7),
+    /* Esbranquiçada à direita */ 30px 0 20px rgba(0, 0, 0, 0.3); /* Começa a escurecer à direita */
+}
+/*Animation*/
+
+h1.tl {
+  color: white; /* Cor principal do texto */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    /* Efeito de luz suave */ 0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.4),
+    0 0 50px rgba(255, 255, 255, 0.3);
+  /* Adicionando a animação */
+  /* animation: heartbeat 2s ease-in-out infinite; Duração e repetição da animação */
+  animation: heartbeat 2s ease-in-out 3;
+  transition: transform 0.4s, text-shadow 0.4s; /* Suavização ao aplicar hover */
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1); /* Tamanho normal */
+  }
+  25% {
+    transform: scale(1.2); /* Aumento na "batida" */
+  }
+  50% {
+    transform: scale(1); /* Volta ao tamanho normal */
+  }
+  75% {
+    transform: scale(1.1); /* Leve aumento */
+  }
+}
+
+#animacao {
+  animation-name: mover-texto, aumentar-texto;
+  animation-duration: 5s, 2s;
+  animation-timing-function: ease-out, ease-in;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+}
+
+/* Efeito ao passar o mouse */
+h1.tl:hover {
+  transform: scale(1.3); /* Aumenta um pouco mais o tamanho do texto */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1),
+    /* Efeito de luz mais intenso */ 0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes mover-texto {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes aumentar-texto {
+  from {
+    font-size: 100%;
+  }
+  to {
+    font-size: 700%;
+  }
+}
+
+/*Fonts*/
+
+@font-face {
+  font-family: "OldeEnglish";
+  src: url("../assets/fonts/OldeEnglish.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "old-english-text-mt";
+  src: url("../assets/fonts/old-english-text-mt.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
