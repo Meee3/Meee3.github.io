@@ -1,0 +1,3 @@
+navbar
+container de navbar altura de 207
+opção do meio tem 45.5px
