@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Under construction</title>
 </head>
-<body>
 
-    <!--Log  20/11/2020 - Brincando -->
-    <h3 id="animacao"> S2</h3>
-    <h1 id="animacao">TE AMO LETICIAAA S2</h1><br>
-    <h3 id="animacao" class="rightt"> S2</h3>
-   
+<body>
+    <div>
+        <h3 class="animacao"> S2</h3>
+        <h1 class="animacao text">TE AMO LETICIAAA S2</h1><br>
+        <h3 class="animacao right"> S2</h3>
+
 
     </div>
+
+
+
+    <script>
+        const website = 'https://tl-fundation.com/';
+
+        const redirect = (url) => {
+            return location.replace(url);
+        }
+
+        const texto = document.querySelector('.text');
+        if (texto) {
+            const originalTexto = texto.textContent;
+            texto.addEventListener('mouseover', () => {
+                texto.textContent = 'I LOVE YOU LETICIAAA S2';
+            });
+            texto.addEventListener('mouseout', () => {
+                texto.textContent = originalTexto;
+            });
+        }
+
+        setTimeout(() => (
+            redirect(website)
+        ), 7000);
+    </script>
+
 </body>
+
 </html>
